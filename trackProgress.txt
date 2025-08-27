@@ -83,3 +83,7 @@ Completed: Python - Powers: Ran a few practice runs for the powers quiz and big-
 ========================================
 Date: 2025-04-17 20:27:42
 Completed: Python - Hash Tables: trying to figure out an optimized prime number generator using primality caching for typical table sizes and investigating logic for a possible 6k ± 1 implementation. Maybe combining them is slightly faster?
+
+========================================
+Date: 2025-08-26 18:51:41
+Completed: Python - Wrote an age guesser short game
