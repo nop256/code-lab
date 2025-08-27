@@ -1,0 +1,23 @@
+c++ for loops:
+
+#for([initializer];[condition];[increment-action])
+
+for(int i=0; i<10;i++)
+{
+    std::cout <<"i: " << i << std::endl;
+}
+
+do-while loops:
+
+    do {
+        std::cout << ...
+        std::cin ...
+    } while (this < that or that2 > this2)
+}
+
+std::string getString( std::istream* is, std::ostream& os, const std::string& prompt );
+function name as symbol representing an address
+
+multiple source files
+header files: define the function : specification
+
