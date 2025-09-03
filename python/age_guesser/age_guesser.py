@@ -2,6 +2,7 @@ import random
 
 class AgeGame:
     def __init__(self):
+        """Initializing starting variales"""
         self.minimum=15
         self.maximum=30
         self.tries=5
@@ -24,9 +25,6 @@ class AgeGame:
     def get_name(self):
         """Function to get the name of the user"""
         self.name = str(input("Please enter your name: ")).strip()
-    def gorl(self):
-        """Function to determine of guess is Greater than or Less than age"""
-        pass
     def play(self):
         """Function to start playing"""
         for attempt in range(1, self.tries+1):
