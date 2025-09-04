@@ -21,9 +21,9 @@ def trackProgress():
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S") #Year-Month-Day Hour:Minute:Second
 
     with open(filename, "a", encoding="utf-8") as file: #utf encoding circumvents bugs I was having
-        file.write("\n" + "="*40 + "\n") #write a line break using equals sign
+        file.write("="*40 + "\n") #write a line break using equals sign
         file.write(f"Date: {timestamp}\n") #record the current date and timestamp
-        file.write(f"Subject: {progress_entry}\n") #record the user's daily progress input from above
+        file.write(f"Subject: {progress_entry}\n\n") #record the user's daily progress input from above
 
     print("✅ Journal logged successfully!") #report log was recorded successfully
     
