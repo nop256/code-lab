@@ -1,0 +1,22 @@
+business context:
+    description of what context the system operates in
+    things need to know as engineer
+    - grandma test
+
+problem statement:
+    what is the problem trying to solve
+
+scope: what will be included and what will not
+
+Assumptions
+    -What assumptions are we making that, if not true, may be problematic
+Featurs
+    what system will do-
+Non-functional requirements:
+    what kinds of things need to e in place eto actually work
+    what constraints
+    "-ilities" (availability, portability, etc.)
+
+
+
+
