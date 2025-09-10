@@ -26,3 +26,23 @@ void diagonalQuadPattern( std::istream& is, std::ostream& os, Image& image )
         }
     }
 }
+
+/*
+ * for each row
+ *      for each column
+ *          for each channel
+ * for (int row=0; row<h; row++)
+ *  {
+ *      for (int col=0; row<h; row++)
+ *      {
+ *          if (row<halfway)
+ *              r = 0;
+ *          else
+ *              r = 255;
+ *          g=(2*row+2*column) % 256;
+ *
+            image.setChannel(row, column, 0, red);
+            image.setchannel(row, column, 1, green);
+            image.setChannel(row, column, 2, blue);
+ *
+ *

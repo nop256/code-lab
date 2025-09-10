@@ -1,0 +1,11 @@
+
+Object Orientation:
+===================
+
+- Encapsulation:
+    Allows you to hide implementation, insulating your functionality from changes by consumers
+-Inheritance:
+    Allows you to group characteristics and specify things fewer times
+    Creates some cplmexity (what's from the parent, what's from the child)
+-Polymorphish
+    Python gives by default
