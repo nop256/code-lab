@@ -14,9 +14,13 @@ questions_3: user_io.o controllers.o questions_3.o image_drawing.o image_output.
 
 ascii_image: ascii_image.o controllers.o Image.o image_drawing.o image_output.o user_io.o
 	$(CXX) $(CXXFLAGS) $^ -o $@
+
+image_file: image_file.o PPM.o Image.o controllers.o user_io.o image_drawing.o image_output.o
+	$(CXX) $(CXXFLAGS) $^ -o $@
+
 %.o: %.cpp image_menu.h
 	$(CXX) $(CXXFLAGS) -c $< -o $@
 
 #clean utility
 clean:
-	rm -f *.o hello questions_3 ascii_image
+	rm -f *.o hello questions_3 ascii_image image_file

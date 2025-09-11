@@ -1,6 +1,7 @@
 // src/image_output.cpp
 #include "image_menu.h"
-#include <ostream>
+#include <fstream>
+#include <iostream>
 
 
 void drawAsciiImage( std::istream& is, std::ostream& os, const Image& image )
@@ -31,10 +32,25 @@ void drawAsciiImage( std::istream& is, std::ostream& os, const Image& image )
             else if (S >= 0.3) {nChar = '~';}
             else if (S >= 0.2) {nChar = '-';}
             else if (S >= 0.1) {nChar = '.';}
-            else                nChar = ' ';
+            else               {nChar = ' ';}
 
             os << nChar;
         }
         os << '\n';
     }
 }
+
+void writeUserImage( std::istream& is, std::ostream& os, const PPM& p )
+{
+    std::string filename = getString(is, os, "Output filename? ");
+
+    //writing the pixel data
+    std::ofstream output_file("out.ppm",std::ios::binary);
+    if (!output_file) {
+        std::cerr << "Error opening File" << std::endl;
+        return;
+    }
+
+    p.writeStream(output_file);
+    output_file.close();
+} 

@@ -23,7 +23,7 @@ double getDouble( std::istream& is, std::ostream& os, const std::string& prompt 
     is>>decimal;
     return decimal;
 }
-int askQuestions3(std::istream& is, std::ostream& os)
+int askQuestions3(std::istream& is, std::ostream& os) //declared in image_menu.h
 {
     std::string color = getString(is, os, "What is your favorite color? ");
     int x = getInteger(is, os, "What is your favorite integer? ");
