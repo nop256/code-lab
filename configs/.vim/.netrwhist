@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =4
+let g:netrw_dirhist_4='/home/nullptr/code/cs3005-fall-2025-nop256'
+let g:netrw_dirhist_3='/home/nullptr/code/se1400/utahtech2'
+let g:netrw_dirhist_2='/home/nullptr/code/se1400'
+let g:netrw_dirhist_1='/home/nullptr'
