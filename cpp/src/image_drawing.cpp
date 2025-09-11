@@ -70,7 +70,7 @@ void stripedDiagonalPattern( std::istream& is, std::ostream& os, PPM& p )
             }
 
             //green
-            g = (row + w - col - 1) / (_mcv + 1); //green = remainder of (row+width-column-1)
+            g = (row + w - col - 1) % (_mcv + 1); //green = remainder of (row+width-column-1)
 
             //blue
             if (col < r) {

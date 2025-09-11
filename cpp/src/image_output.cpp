@@ -45,7 +45,7 @@ void writeUserImage( std::istream& is, std::ostream& os, const PPM& p )
     std::string filename = getString(is, os, "Output filename? ");
 
     //writing the pixel data
-    std::ofstream output_file("out.ppm",std::ios::binary);
+    std::ofstream output_file(filename,std::ios::binary);
     if (!output_file) {
         std::cerr << "Error opening File" << std::endl;
         return;

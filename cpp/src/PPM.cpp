@@ -37,7 +37,11 @@ void PPM::writeStream(std::ostream& os) const
     //header
     os << "P6 " << width_ << " " << height_ << " " << mcv_ << "\n";
 
-    for (int r=0;r<200;r++) {
-        os.put(static_cast<char>(r));
+    for (int row=0; row<height_; row++) {
+        for (int col=0; col<width_; col++) {
+            for (int ch=0; ch<3; ch++) {
+                os.put(static_cast<char>(getChannel(row,col,ch)));
+            }
+        }
     }
 }
