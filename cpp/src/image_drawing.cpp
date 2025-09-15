@@ -12,23 +12,27 @@ void diagonalQuadPattern( std::istream& is, std::ostream& os, Image& image )
     const int h = image.getHeight();
     const int w = image.getWidth();
 
-    int red=0;
-    int blue=0;
-    int green=0;
+    //int red=0;
+    //int blue=0;
+    //int green=0;
     //int mid=h/2;
 
     for (int row=0; row<h; row++){ //r=current row # in loop, h=image height
         for (int column=0; column<w; column++){
+            int red, green, blue;
+
             //red: top-half=0, bottom-half=255
+            //const int red  = ( row < ( h/2 ) ) ? 0 : 255;//ternary operator: (row < (height/2 (halfway-point)) ) ? return 0 if_true (top) : return 255 if_false(bottom)
             if (row<(h/2)) red=0;
             else red=255;
-            if (column<(w/2)) blue=0;
-            else blue=255;
-            green=((2*row)+(2*column)%256);
-            //const int red  = ( row < ( h/2 ) ) ? 0 : 255;//ternary operator: (row < (height/2 (halfway-point)) ) ? return 0 if_true (top) : return 255 if_false(bottom)
+
             //blue: left-half=0 right-half=255
             //const int blue = ( column < ( w/2 ) ) ? 0 : 255;//ternary operator (column < (width/2 (halfway-point)) ) then return 0(left-half), else return 255(right-half)
+            if (column<(w/2)) blue=0;
+            else blue=255;
+
             //const int green = (2*row + 2*column) % 256;//calculated exactly as in instructions
+            green = ((2 * row) + (2 * column)) % 256;
                                                        //
             image.setChannel(row, column, 0, red);
             image.setChannel(row, column, 1, green);
@@ -73,12 +77,41 @@ void stripedDiagonalPattern( std::istream& is, std::ostream& os, PPM& p )
             g = (row + w - col - 1) % (_mcv + 1); //green = remainder of (row+width-column-1)
 
             //blue
-            if (col < r) {
+            if (col < row) {
                 b = 0;                  //bluie pixel=0 if column # is less than row number (loop iteration values)
             } else {
                 b = _mcv;               //blue = mcv in all other cases.
             }
             p.setPixel(row,col,r,g,b);
+        }
+    }
+}
+
+void simpleSquaresPattern(std::istream& is, std::ostream& os, Image& image)
+{
+    int size = getInteger(is,os,"Image size? ");
+    int r,g,b;
+
+    image.setHeight(size);
+    image.setWidth(size);
+
+    for (int row=0; row<size; row++) {
+        for (int col=0; col< size; col++) {
+            if (row<(size/2)) {
+                r=127;
+            } else {
+                r=255;
+            }
+            if (col<(size/2)) {
+                g=0;
+            } else {
+                g=255;
+            }
+            b=255;
+
+            image.setChannel(row, col, 0, r);
+            image.setChannel(row, col, 1, g);
+            image.setChannel(row, col, 2, b);
         }
     }
 }

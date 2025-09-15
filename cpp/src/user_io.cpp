@@ -34,3 +34,13 @@ int askQuestions3(std::istream& is, std::ostream& os) //declared in image_menu.h
     }
     return x;
 }
+
+// inquisitor - practice-exam1
+int askInquisitorQuestions( std::istream& is, std::ostream& os )
+{
+    std::string pokemon = getString(is, os, "What is your most powerful Pokemon? ");
+    int lvl = getInteger(is, os, "What is its level? ");
+    double health = getDouble(is, os, "What is your health? ");
+    os << pokemon << " is level " << lvl << " and " << health << "HP.\n";
+    return lvl;
+}
