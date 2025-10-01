@@ -36,3 +36,7 @@ Subject: Convinced group to ditch the wizards & dating thing in our group meetin
 Date: 2025-09-27 11:23:52
 Subject: everyone's slides look good, will meet with group monday morning before class to finalize details
 
+========================================
+Date: 2025-09-30 22:40:06
+Subject: session-based or jwt-based authentication?
+
