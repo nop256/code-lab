@@ -40,3 +40,7 @@ Subject: everyone's slides look good, will meet with group monday morning before
 Date: 2025-09-30 22:40:06
 Subject: session-based or jwt-based authentication?
 
+========================================
+Date: 2025-09-30 22:41:10
+Subject: transitory includes*
+
