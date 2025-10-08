@@ -44,3 +44,11 @@ Subject: session-based or jwt-based authentication?
 Date: 2025-09-30 22:41:10
 Subject: transitory includes*
 
+========================================
+Date: 2025-10-01 18:18:09
+Subject: git log -> get commit hashes
+
+========================================
+Date: 2025-10-08 13:57:02
+Subject: scrum master-assignment?
+
