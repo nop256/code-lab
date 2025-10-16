@@ -64,7 +64,7 @@ brew install vim git curl cmake python clangd
 
 1) **Clone/sync this repo** to each machine (e.g., `~/dotfiles`):
 ```bash
-git clone <your-repo-url> ~/dotfiles
+git clone https://github.com/nop256/code-lab.git ~/dotfiles
 ```
 
 2) **Install vim‑plug**:
