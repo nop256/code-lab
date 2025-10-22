@@ -55,4 +55,5 @@ let g:html_indent_style1 = 'inc'
 let g:html_indent_style_tag = 'noinc'
 let g:html_indent_script1 = 'inc'
 let g:html_indent_script_tag = 'noinc'
+let g:ycm_enable_semantic_highlighting=1
 
