@@ -52,3 +52,7 @@ Subject: git log -> get commit hashes
 Date: 2025-10-08 13:57:02
 Subject: scrum master-assignment?
 
+========================================
+Date: 2025-10-29 11:33:16
+Subject: Adding minor animations & sound effects ; Custom webpage css colors for each unique crew (themes) ; Refactoring API to use JS in tandem with newer tables back-end ; title & body character limiting
+
